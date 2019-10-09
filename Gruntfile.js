@@ -9,6 +9,8 @@ module.exports = grunt => {
 
 	if (!Array.isArray(root)) root = [root];
 
+	const sass = require('node-sass');
+
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -48,11 +50,19 @@ module.exports = grunt => {
 				dest: 'css/reveal.css'
 			},
 			themes: {
-				expand: true,
-				cwd: 'css/theme/source',
-				src: ['*.sass', '*.scss'],
-				dest: 'css/theme',
-				ext: '.css'
+				files: [
+					{
+						expand: true,
+						cwd: 'css/theme/source',
+						src: ['*.scss'],
+						dest: 'css/theme',
+						ext: '.css'
+					}
+				]
+			},
+			options: {
+				implementation: sass,
+				sourceMap: true
 			}
 		},
 
