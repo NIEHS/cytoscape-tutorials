@@ -1,5 +1,5 @@
 /**
- * NIEHS theme based off of 'white' theme for reveal.js.
+ * NIEHS/NTP theme based off of 'white' theme for reveal.js.
  *
  */
 
@@ -9,9 +9,6 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-// Theme template ------------------------------
-@import "../template/theme";
-// ---------------------------------------------
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -23,6 +20,8 @@ $mainFont: Helvetica, sans-serif;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$imgBorder: 0px;
 
 // headers
 $heading1Color: #fff;
@@ -90,23 +89,24 @@ section.has-dark-background {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%
-}
+  width: 100%; }
 
 .flexcolumn {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
-}
+  flex: 1; }
 
 .fleximage {
   align-self: center;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .flexreference {
   justify-content: center;
   align-self: baseline;
-  font-size: 8px;
-}
+  font-size: 8px; }
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
