@@ -7,7 +7,7 @@
 		<title>Introduction to Cytoscape Workshop</title>
 
 		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/niehs-presentation.css">
+		<link rel="stylesheet" href="../css/theme/cytoscape-presentation-1.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../lib/css/zenburn.css">
@@ -35,18 +35,28 @@
 				<section>
 					<h2>Introduction to Cytoscape and Network Biology</h2>
 					<br/><br/>
-					<h4>NIEHS 2019</h4>
-					<h5>INSERT DATE HERE</h5>
+					<h4>Office of Data Science</h4>
+					<h4>NIEHS 2020</h4>
 
 					<aside class="notes" data-markdown>
 					Add speaker notes here...
 					</aside>
 				</section>
 
+				<section>
+					<h2>Cytoscape and Network Biology: <br /><highlight><em>an Introduction</em></highlight></h2>
+					<h5><span style="font-size: 70%">Slides: <a href="http://niehs.github.io/cytoscape-tutorials">http://niehs.github.io/cytoscape-tutorials</a></span></h5>
+					<br /><br />
+					<h5 style="font-size: 60%">Trey Saddler</h5>
+					<br />
+					<h5 style="font-size: 80%">Office of Data Science, NTP/NIEHS
+					<br/><span style="font-size: 80%">12 February 2020</span></h5>
+				</section>
+
 				<!-- Introductory Slides -->
 				<section id="introductions">
 					<section>
-					<h1>Introductions</h1>
+						<h1>Introductions</h1>
 						<highlight>Trey Saddler</highlight><br />
 						<ul>
 							<li>Data Scientist, Office of Data Science, NTP</li>
@@ -55,6 +65,20 @@
 					<aside class="notes" data-markdown>
 					Add speaker notes here...
 					</aside>
+					</section>
+
+					<section>
+						<h1>Introductions</h1>
+						<p><highlight>Prior Cytoscape or network analysis experience?</highlight></p>
+						<ul>
+							<li class="fragment">None -- that's what I'm here for!</li>
+							<li class="fragment">Some network analysis, but <em>what's Cytoscape?</em></li>
+							<li class="fragment">I've played with Cytoscape, but still have a lot to learn.</li>
+							<li class="fragment">I use Cytoscape all the time... <span class="fragment"><em><br/>(hey, I could probably teach this course!)</em></span></li>
+						</ul>
+						<aside class="notes" data-markdown>
+						Add speaker notes here...
+						</aside>
 					</section>
 				</section>
 
@@ -65,11 +89,12 @@
 					<br/><br/>
 					<ul>
 						<li>Understand the major applications of network biology</li>
+						<li>Learn Cytoscape's history and uses</li>
 						<li>Navigate Cytoscape's interface</li>
 						<li>Import data into Cytoscape</li>
-						<li>Find relevant networks and pathways</li>
-						<li>Perform basic topological and other network analyses</li>
 						<li>Manipulate network layouts and data visualization</li>
+						<li>Perform basic topological and other network analyses</li>
+						<li>Find relevant networks and pathways</li>
 						<li>Know where to find additional Cytoscape apps and tutorials</li>
 					</ul>
 
@@ -145,9 +170,26 @@
 				<!-- Network Analysis and Viz section -->
 				<section id="network-analysis" data-external="modules/network-analysis/module.html"></section>
                 <section id="network-visualization" data-external="modules/network-visualization/module.html"></section>
+				
+				<section id="ap-ms-analysis">
+					<section>
+						<h1>AP-MS Network Analysis</h1>
+						<a href="https://cytoscape.github.io/cytoscape-tutorials/protocols/data/ap-ms-demodata.csv">Download example data</a>
+					</section>
+					<section>
+						<h1>New Column Information</h1>
+						In the first cell of the CombinedScore column, enter the mapping below and click enter.<br \><br \>
+						<code>piechart: showlabels="false" range="0,1" arcstart="90" valuelist=".5,.5" colorlist="up:blue,zero:white,down:white;up:purple,zero:white,down:white" attributelist="HEKScore,JurkatScore" labellist="HEKScore,JurkatScore"</code>
+					</section>
+				</section>
 
 				<!-- Wrap up and helpful links -->
 				<section id="wrap-up">
+					<section>
+						<h1>Exit Survey</h1>
+						<p>Please fill out the exit survey!</p>
+						<a href="https://www.research.net/r/021220_cytoscape_fdbk">Link to the survey</a>
+					</section>
 					<section>
 						<h1>Thank You!</h1>
 						<highlight>Here are additional resources you may find useful:</highlight>
